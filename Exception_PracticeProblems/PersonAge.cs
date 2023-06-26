@@ -33,7 +33,7 @@ namespace Exception_PracticeProblems
             }
             catch(Exception)
             {
-                throw new HandleExceptionAge(HandleExceptionAge.ExceptionType.NULL, "Age is Null");
+                throw new HandleExceptionAge(HandleExceptionAge.ExceptionType.EMPTY, "Age is Empty");
             }
         }
     }

@@ -44,5 +44,18 @@ namespace PersonAgesUnitTesting
                 Assert.AreEqual(ex.Message, "Age is Null");
             }
         }
+        [TestMethod]
+        public void TestMethod_ToCheck_InValidAge_ShouldReturn_EmptyAge()
+        {
+            try
+            {
+                int agelimit = default;
+                string result = age.AgeCategory(agelimit);
+            }
+            catch (Exception ex)
+            {
+                Assert.AreEqual(ex.Message, "Age is Empty");
+            }
+        }
     }
 }
